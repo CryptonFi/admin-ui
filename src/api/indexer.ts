@@ -1,6 +1,6 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
-import { getRequest, sleep } from './Helpers';
-import { MASTER_ORDER_ADDRESS, TON_API_ENDPOINT } from './Config';
+import { getRequest, sleep } from './helpers';
+import { MASTER_ORDER_ADDRESS, TON_API_ENDPOINT } from './config';
 import { Address } from '@ton/core';
 
 const MAX_RETRIES = 3;
