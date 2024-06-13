@@ -13,11 +13,13 @@ export const ContractsList = () => {
     }, []);
 
     return (
-        <div className="contractsList">
+        <div className="mx-5">
             <h1 className="text-2xl m-7">All contracts with orders:</h1>
-            {contracts.map((c, i) => (
-                <ContractItem key={i} address={c} />
-            ))}
+            <ul className="list-disc mx-4">
+                {contracts.map((c, i) => (
+                    <ContractItem key={i} address={c} />
+                ))}
+            </ul>
         </div>
     );
 };

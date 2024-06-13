@@ -6,7 +6,6 @@ import { Address } from '@ton/core';
 const MAX_RETRIES = 3;
 
 export async function CollectUserContractAddresses(limit: number): Promise<Array<string>> {
-    // TODO: create tonApi only once
     const tonApi = axios.create({ baseURL: TON_API_ENDPOINT });
     return ParseTransactions(tonApi, limit);
 }
